@@ -1,8 +1,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using ContinuousWeb.Controllers;
-
-
-
+using System;
+using Microsoft.AspNetCore.Mvc;
 
 namespace ContinuousWeb.Tests
 {
@@ -14,7 +13,18 @@ namespace ContinuousWeb.Tests
         {
             var homeController = new HomeController();
             var result = homeController.About();
+            //ActionResult result = homeController.About();
+            
         }
+
+        [TestMethod ]
+        public void CheckNumber()
+        {
+              int x = 100;
+              Assert.IsTrue( x % 2 == 0, "Result = " + x.ToString() ); 
+
+        }
+
     }
 
 }
