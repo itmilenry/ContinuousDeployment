@@ -20,7 +20,7 @@ namespace ContinuousWeb.Tests
         [TestMethod ]
         public void CheckNumber()
         {
-              int x = 100;
+              int x = 1001;
               Assert.IsTrue( x % 2 == 0, "Result = " + x.ToString() ); 
 
         }
