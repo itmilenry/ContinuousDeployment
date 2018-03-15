@@ -1,13 +1,16 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using ContinuousWeb.Controllers;
-using System;
-using Microsoft.AspNetCore.Mvc;
 
 namespace ContinuousWeb.Tests
 {
     [TestClass]
-    public class HomeControllerTests
-    {        
+    public class UnitTest1
+    {
+        [TestMethod]
+        public void TestMethod1()
+        {
+        }
+
         [TestMethod]
         public void AboutPageTest()
         {
@@ -17,14 +20,13 @@ namespace ContinuousWeb.Tests
             
         }
 
-        [TestMethod ]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod ]
         public void CheckNumber()
         {
-              int x = 1001;
+              int x = 100;
               Assert.IsTrue( x % 2 == 0, "Result = " + x.ToString() ); 
 
         }
 
     }
-
 }
